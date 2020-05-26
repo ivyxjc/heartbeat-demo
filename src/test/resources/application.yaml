@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        url: ${jdbc.url}
+        username: ${jdbc.username}
+        password: ${jdbc.password}
+        hikari:
+            maximum-pool-size: 18
+    artemis:
+        mode: native
+        host: ${artemis.url}
+        port: ${artemis.port}
+
+
+lockClass: 100
